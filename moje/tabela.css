@@ -1,0 +1,15 @@
+table{
+	border: solid 1px black;
+	padding: 1%;
+	border-spacing: 10px;
+}
+
+thead{
+	border: solid 1px white;
+	background-color: #8cff66;
+	font: bold;
+}
+
+.row{
+	background-color: #39e600;
+}

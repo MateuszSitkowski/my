@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <meta charset="UTF-8"> <!-- dzięki temu wpisowi meta strona rozróżnia polskie znaki i nie musisz już pisać krzaczkami tutaj ;) -->
+  <title>karta_tel</title>
+
+<!-- pomiędzy tagami <style> umieszczesz sobie stylowanie, nie praktykuje się umieszczania styli w tagach html. Wyadaje mi się że wszystko jest w miarę czytelne, jak nie to możesz się doszkolić tutaj: https://www.codecademy.com/learn/web 
+możesz tu umieszczać style wszystkich tagów, klasy i je przypisywać do poszczególnych tagów (klasy to te z kropką) oraz ID, gdzie jeden tag możesz przypisać do jednego ID-->
+  
+  <!-- <style> 
+
+   div{
+    text-align: center;
+    }
+
+    body {
+      background-color: white;
+      font-family: Helvetica, sans-serif;
+
+    }
+
+    .wpraper {
+      padding: 5%;
+      width: 100%;
+      margin: auto 10px auto 10px;
+    }
+
+    .tab {
+      background-color: #d9d9d9;
+      height: 45px;
+      padding: 8px;
+      line-height: 1.5;
+      float: none;
+    }
+
+    .img-center {
+      width: 70%;
+      height: auto;
+      max-width: 628px;
+      margin: auto;
+    }
+
+    .text {
+      margin: 0px; 
+      font-size: 16px;
+      line-height: 18px;
+      font-family: Helvetica, sans-serif;
+      color: #333333;
+      display: block;
+      text-align: justify;
+      margin: auto 20px auto 20px;
+      column-count: 2;
+      column-gap: 35px;
+    }
+
+    .line {
+      border-top: solid 1px #bfbfbf;
+      padding-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+    }
+
+    .table-left{
+      text-align: left;
+      padding-left: 8%;
+      width: 23%;
+      font-weight: bold;
+    }
+
+    tr{
+      height: 45px;
+      padding: 8px;
+      line-height: 1.5;
+      float: none;
+    }
+
+    h1{
+      color: white;
+      background-color: grey;
+      padding-left: 3%;
+      padding-top: 1px;
+      padding-bottom: 3px;
+      text-align: left;
+    }
+    h4{
+      margin: auto 20px auto 20px;
+      text-align: left;
+    }
+    .unordered{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .img-right{
+      height: auto;
+      max-width: 390px; /* zmiany wprowadzone z Klisiem */
+      width: auto:;
+      display: inline-block;
+    }
+
+    ul{
+      width: 100%;
+      text-align: left;
+    }
+
+    li{
+      font-size: 18px;
+    }
+
+    h3{
+      font-size: 20px;
+    }
+
+    i{
+      padding: 1px 1% 1px 1%;
+    }
+
+    footer{
+      height: 20px;
+    }
+
+  </style> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"> ///// to jest linkowanie do http://fontawesome.io/icons/ czyli fontu ze znaczkami, od nich wzieliśmy symbole znajdujące się obok opisu telefonu i specyfikacji technicznej -->
+
+</head>
+
+
+<body class="center">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <style> 
+
+   .center{
+    text-align: center;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+
+    }
+
+    .wpraper {
+      padding: 5%;
+      width: 100%;
+      margin: auto 10px auto 10px;
+    }
+
+    .tab {
+      background-color: #d9d9d9;
+      height: 45px;
+      padding: 8px;
+      line-height: 1.5;
+      float: none;
+    }
+
+    .img-center {
+      width: 70%;
+      height: auto;
+      max-width: 628px;
+      margin: auto;
+    }
+
+    .text {
+      margin: 0px; 
+      font-size: 16px;
+      line-height: 18px;
+      font-family: Helvetica, sans-serif;
+      color: #333333;
+      display: block;
+      text-align: justify;
+      margin: auto 20px auto 20px;
+    }
+
+    .line {
+      border-top: solid 1px #bfbfbf;
+      padding-bottom: 10px;
+    }
+    .table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+    }
+
+    .table-left{
+      text-align: left;
+      padding-left: 8%;
+      width: 23%;
+      font-weight: bold;
+    }
+
+    .tr{
+      height: 45px;
+      padding: 8px;
+      line-height: 1.5;
+      float: none;
+    }
+
+    #h1{
+      color: white;
+      background-color: grey;
+      padding-left: 3%;
+      padding-top: 1px;
+      padding-bottom: 3px;
+      text-align: left;
+    }
+    #h2{
+      color: white;
+      background-color: grey;
+      padding-left: 3%;
+      padding-top: 1px;
+      padding-bottom: 3px;
+      text-align: left;
+    }
+    .h4{
+      margin: auto 20px auto 20px;
+      text-align: left;
+    }
+    .unordered{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    #img-contain{
+      width: 70%;
+      height: auto;
+      max-width: 290px;
+      display: inline-block;
+    }
+    #img-pros{
+      width: 70%;
+      height: auto;
+      max-width: 300px;
+      display: inline-block;
+    }
+
+    .ul{
+      width: 100%;
+      text-align: left;
+    }
+
+    .li{
+      font-size: 18px;
+    }
+
+    .h3{
+      font-size: 20px;
+    }
+
+    .i{
+      padding: 1px 1% 1px 1%;
+    }
+
+    .footer{
+      height: 20px;
+    }
+
+  </style>
+  <div class="wrapper center">
+    <img class="img-center" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_a.jpg"/>
+    
+    <div>
+      <h1 id="h1"><i class="fa fa-pencil-square-o i" aria-hidden="true"></i>Opis telefonu</h1>
+    </div>
+    <br><br>
+
+    <h4 class="h4">Wyświetlacz:</h4>
+    <br>
+
+    <p class="text">Koreańczykom udało się zmieścić w 5,5-calowym wyświetlaczu niesamowitą rozdzielczość - 2560 x 1440 pikseli (QuadHD). W ten sposób stosunkowo mały smartfon ma więcej punktów obrazu niż telewizor HD o przekątnej 50 cali. LG wyświetla tekst, ikony oraz zdjęcia wysokiej rozdzielczości ostrzej niż jakikolwiek inny wyświetlacz telefonu na świecie.</p><br>
+
+    <div>
+      <img class="img-center" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_b.jpg"/>
+    </div>
+    <br>
+    <br>
+
+    <div class="line"></div>
+    <br>
+
+    <h4 class="h4">Aparat:</h4>
+    <br>
+
+    <p class="text">Optyczna stabilizacja obrazu zmniejsza rozmycia spowodowane wstrząsami, a laserowy pomiar ostrości błyskawicznie mierzy odległość do fotografowanego obiektu, by wykonać najlepszej jakości zdjęcia aparatem 13 MPx. Teraz można wykonać jaśniejsze i wyraźniejsze zdjęcia nawet przy słabym oświetleniu. Dzięki szybkiemu ustawianiu ostrości nigdy nie umknie żaden moment warty uchwycenia.</p>
+    <br>
+
+    <img class="img-center" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_d.jpg"/>
+    <br>
+    <br>
+
+    <div class="line"></div>
+    <br>
+
+    <h4 class="h4">Obudowa:</h4>
+    <br>
+
+    <p class="text">LG G3 F400 posiada wymienną baterię i całkowicie zdejmowane plecy obudowy, pod którymi mieszczą się gniazda na kartę mikro SIM i micro SD. Design telefonu jest minimalistyczny – z przodu znajduje się tylko ekran, a przyciski do obsługi systemu są na nim wyświetlane. U góry znajduje się ledwo widoczny emiter światła podczerwonego pozwalającego przekształcić telefon w uniwersalnego pilota. Tył obudowy, chociaż jest plastikowy, jest wytrzymały i solidnie trzyma się na miejscu. Tu znajdują się przyciski regulacji głośności oraz przycisk zasilania, poniżej obiektywu aparatu. Przyciski z tyłu obudowy to element charakterystyczny dla LG.</p>
+    <br>
+
+    <img class="img-center" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_c.jpg"/>
+    <br>
+
+    <div class="line"></div>
+    <br>
+
+    <h4 class="h4">Procesor:</h4>
+    <br>
+
+    <p class="text">Procesor LG G3 to czterordzeniowy Snapdragon 801 taktowany zegarem 2,5 GHz. Telefon posiada 3 GB RAM oraz 32 GB na pliki użytkownika, obsługuje karty pamięci o pojemności do 128 GB. Najszybszy dostępny procesor daje najlepsze dostępne rezultaty. Działanie systemu jest płynne, ładowanie aplikacji oraz stron działa szybko. Również gry działają bez problemu. Zapasu mocy obliczeniowej wystarczy na najbliższe lata.</p>
+    <br>
+
+    <img class="img-center" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_e.jpg"/>
+    <br>
+
+    <div class="line"></div>
+    <br>
+
+    <div class="unordered">
+      <div>
+        <h3 class="h3">Zalety telefonu:</h3>
+      
+        <ul class="ul"> 
+          <li class="li">Przekątna ekranu 5,5 cala.</li>
+          <li class="li">4-rdzeniowy procesor.</li>
+          <li class="li">Płynna praca systemu i aplikacji.</li>
+          <li class="li">Rozdzielczość Quad HD.</li>
+          <li class="li">Obsługa kart pamięci.</li>
+          <li class="li">Długi czas pracy baterii.</li>
+          <li class="li">Laserowy autofocus.</li>
+          <li class="li">Nowoczesny design.</li>
+        </ul>
+      </div>
+
+      <div class="center">
+        <img id="img-pros" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_3.jpg"/>
+      </div>
+    </div>
+
+    <div>
+      <h1 id="h2"><i class="fa fa-cogs i" aria-hidden="true"></i>Specyfikacja techniczna</h1>
+    </div>
+
+    <table class="table">
+      <tbody>
+        <tr class="tab tr">
+          <td class="table-left"><p><span>Wymiary:</span></p></td>
+          <td><p>146,30 x 74,60 x 8,90 mm</p></td>
+        </tr>
+    
+        <tr class="tr">
+          <td class="table-left"><p>Waga:</p></td>
+          <td><p>149 g</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>Wyświetlacz:</p></td>
+          <td><p>Kolorowy / IPS TFT, 16M kolorów, 1440 x 2560 px (5,50") 534 ppi</p></td>
+        </tr>
+    
+        <tr class="tr">
+          <td class="table-left"><p>Procesor:</p></td>
+          <td><p>Qualcomm Snapdragon 801; Zegapr procesora: 2,5 GHz; Liczba rdzeni: 4; GPU: Adreno 330</p></td>
+        </tr>
+    
+        <tr class="tab tr">
+          <td class="table-left"><p>RAM:</p></td>
+          <td><p>3 GB</p></td>
+        </tr>
+    
+        <tr class="tr">
+          <td class="table-left"><p>Pamięć:</p></td>
+          <td><p>Wbudowana: 32 GB; Karta pamiêci: MicroSD, MicroSDHC, MicroSDXC (do 128 GB)</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>Dodatkowe funkcje:</p></td>
+          <td><p>Przeglądarka HTML, Java, Kompas cyfrowy, Terminarz, Wybieranie głosowe dla numerów i funkcji</p></td>
+        </tr>
+
+        <tr class="tr">
+          <td class="table-left"><p>Łączność:</p></td>
+          <td><p>Wifi v802.11 b/g/n/ac; złącze jack 3.5 mm</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>Bateria:</p></td>
+          <td><p>Li-Po 3000 mAh</p></td>
+        </tr>
+
+        <tr class="tr">
+          <td class="table-left"><p>Sieć:</p></td> 
+          <td><p>GSM: 850, 900, 1800, 1900 MHz HSDPA 42,00 Mb/s HSUPA 5,76 Mb/s LTE: 800, 1800, 2600</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>GPS:</p></td>
+          <td><p>A-GPS, GLONASS</p></td>
+        </tr>
+
+        <tr class="tr">
+          <td class="table-left"><p>Bluetooth®:</p></td>
+          <td><p>Bluetooth v4.0 LE</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>System operacyjny:</p></td>
+          <td><p>Android 4.4.2 KitKat</p></td>
+        </tr>
+
+        <tr class="tr">
+          <td class="table-left"><p>Aparat fotograficzny:</p></td>
+          <td><p>13 Mpx, 4128x3096 px, OIS, laserowy autofocus</p></td>
+        </tr>
+
+        <tr class="tab tr">
+          <td class="table-left"><p>Drugi aparat fotograficzny:</p></td>
+          <td><p>2,1 Mpx, 1600x1200 px</p></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <br><br>
+
+    <div class="line"></div>
+    <br>
+
+    <div class="unordered">
+      <div>
+      <h3 class="h3">Zestaw zawiera:</h3>
+
+      <ul class="ul">
+        <li class="li">Telefon LG G3 F400</li>
+        <li class="li">Kabel USB</li>
+        <li class="li">Ładowarka sieciowa</li>
+        <li class="li">Oryginalne pudełko</li>
+        <li class="li">Słuchawki</li>
+        <li class="li">Instrukcja obsługi</li>
+        <li class="li">Dowód zakupu</li>
+      </ul>
+    </div>
+
+    <div>
+      <img id="img-contain" src="http://serwer1307592.home.pl/_telefony/LG_G3_F400/LG_G3_F400_4.jpg">
+    </div>
+    </div>
+  </div>
+  <footer class="footer">
+    
+  </footer>
+  <div class="line"></div>
+  
+
+</body>
+</html>
