@@ -1,0 +1,19 @@
+.body {
+    background: #fff url(/Users/Synu/Pictures/Zdjęcia/Download/d7c11f17782d.jpg) no-repeat top center;
+    background-size: 100%;
+}
+
+.srodek{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.fa{
+	font-size: 20px;
+}
